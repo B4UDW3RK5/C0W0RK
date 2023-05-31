@@ -11,7 +11,7 @@ const pages = [
 
 (async (pages) => {
   const browser = await puppeteer.launch({
-    executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    executablePath: '/usr/local/bin/chrome',
     devtools: true,
     defaultViewport: null,
     args: [
@@ -19,7 +19,7 @@ const pages = [
       "--mute-audio",
       "--use-fake-device-for-media-stream",
       "--use-fake-ui-for-media-stream",
-      "--use-file-for-fake-video-capture=/Users/cat/Projects/C0W0RK/tet.mjpeg"
+      "--use-file-for-fake-video-capture=/home/cat/C0W0RK/tet.mjpeg"
     ]
   });
 
