@@ -15,6 +15,8 @@ const pages = [
     devtools: true,
     defaultViewport: null,
     args: [
+      "--headless",
+      "--disable-gpu",
       "--enable-logging=stderr --vmodule=*/webrtc/*=3",
       "--mute-audio",
       "--use-fake-device-for-media-stream",
